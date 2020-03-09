@@ -3,7 +3,7 @@ import numpy as npy
 
 #Mean Filter(Box Filter) with small kernel
 
-img=cv2.imread('minion.jpg')
+img=cv2.imread('adam.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow('Original image',img)
@@ -16,14 +16,14 @@ cv2.destroyAllWindows
 
      
 
-def change(sayi,arr):
+def change(num,arr):
         total=0        
         for y in range(len(arr)):
             total+=arr[y]
-        total+=sayi
+        total+=num
         total=total/9
-        sonuc=round(total)
-        return sonuc
+        result=round(total)
+        return result
 
 copy=gray.copy()
 
