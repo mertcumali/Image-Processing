@@ -1,8 +1,8 @@
 import numpy as np
 import cv2
 
-#Gaussian Filter 5x5lik kernel
-img=cv2.imread('minion.jpg')
+#Gaussian Filter 5x5 kernel
+img=cv2.imread('tom.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 kernell=[[1,4,6,4,1],
@@ -36,7 +36,7 @@ for y in range(2,height-2):
 cv2.imshow('Original image',img)
 
 cv2.imshow('Gray image', gray)
-cv2.imwrite('GaussianFilter2.jpg',copy)
+cv2.imwrite('GaussianFilter.jpg',copy)
 
 cv2.imshow('Copy',copy)
  
