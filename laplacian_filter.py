@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 #laplace with 5x5 kernel
-img = cv2.imread('bebe.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('baby.jpg', cv2.IMREAD_GRAYSCALE)
 img_out = img.copy()
 
 height = img.shape[0]
@@ -30,6 +30,6 @@ for i in np.arange(2, height-2):
 
 
 cv2.imshow('Original',img)
-cv2.imwrite('Laplacian image1.jpg',img_out)
+cv2.imwrite('Laplacian image.jpg',img_out)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
