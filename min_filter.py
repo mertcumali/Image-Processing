@@ -2,7 +2,7 @@ import cv2
 import numpy as npy
 #Minimum Filter
 
-img=cv2.imread('noise.jpg')
+img=cv2.imread('adam.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow('Original image',img)
@@ -15,7 +15,7 @@ cv2.destroyAllWindows
 
      
 
-def change(sayi,arr):
+def change(arr):
     min=255
     for x in range(len(arr)):
         if(arr[x]<min):
@@ -35,7 +35,7 @@ for y in range(1,len(gray)-1):
 
 
 cv2.imshow('Min Filter',copy)
-#cv2.imwrite('min.jpg',copy)
+
 
 cv2.waitKey(0)
 cv2.destroyAllWindows
