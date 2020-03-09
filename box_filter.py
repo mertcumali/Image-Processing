@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 #Mean Filter(Box Filter)with big kernel
-img = cv2.imread('minion.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('tom.jpg', cv2.IMREAD_GRAYSCALE)
 img_out = img.copy()
 
 height = img.shape[0]
