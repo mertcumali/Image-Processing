@@ -1,9 +1,9 @@
 import cv2
 import numpy as npy
 
-#lbp version
+#Extended Local Binary Pattern - Radial Direction
 
-img=cv2.imread('min.jpg')
+img=cv2.imread('tom.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow('Original image',img)
