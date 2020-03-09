@@ -1,8 +1,9 @@
 import cv2
 import numpy as npy
 
-#lbp best version
-img=cv2.imread('min.jpg')
+#Extended Local Binary Pattern Filter - Neighboring Pixels’ Intensities 
+
+img=cv2.imread('tom.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow('Original image',img)
@@ -13,12 +14,12 @@ cv2.imshow('Gray image', gray)
 cv2.waitKey(0)
 cv2.destroyAllWindows
 
-def change(sayi,arr):
+def change(arr):
     sum=0
-    size=len(arr) #verilerin sayısı
+    size=len(arr) 
     for x in range(len(arr)):
         sum+=arr[x]
-    ort=sum/size #ortalama buldum
+    ort=sum/size 
 
     for j in range(len(arr)):
         if(arr[j]>=ort):
