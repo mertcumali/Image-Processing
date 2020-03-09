@@ -1,8 +1,8 @@
 import cv2
 import numpy as npy
-#original lbp
+#Local Binary Pattern Filter
 
-img=cv2.imread('min.jpg')
+img=cv2.imread('tom.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow('Original image',img)
@@ -14,9 +14,9 @@ cv2.waitKey(0)
 cv2.destroyAllWindows
 
 
-def change(sayi,arr):
+def change(number,arr):
         for x in range(len(arr)):
-                if(arr[x]<sayi):
+                if(arr[x]<number):
                  arr[x]=0
                 else:
                  arr[x]=1
