@@ -3,7 +3,7 @@ import numpy as npy
 
 #Maximum Filter
 
-img=cv2.imread('noise.jpg')
+img=cv2.imread('adam.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow('Original image',img)
@@ -16,7 +16,7 @@ cv2.destroyAllWindows
 
      
 
-def change(sayi,arr):
+def change(arr):
     max=0
     for x in range(len(arr)):
         if(arr[x]>max):
@@ -36,7 +36,6 @@ for y in range(1,len(gray)-1):
 
 
 cv2.imshow('Max Filter',copy)
-#cv2.imwrite('max.jpg',copy)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows
